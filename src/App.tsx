@@ -5,7 +5,6 @@ import { useMediaQuery } from './hooks/useMediaQuery';
 import { theme } from './Theme';
 
 
-
 function App() {
 
   const width = useMediaQuery()
