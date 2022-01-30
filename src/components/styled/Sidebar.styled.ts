@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import { IStyledSidebar } from '../../interfaces/ISidebar'
 
 export const StyledSidebar = styled.div<IStyledSidebar>`
+    display: flex;
+    flex-direction: column;
     width: 330px;
     max-width: 100%;
     height: 100vh;
@@ -70,7 +72,8 @@ export const AppbarMargin = styled.div`
 `
 
 export const ContactContainer = styled.div`
-    margin-top: 32px;
+    margin-top: auto;
+    margin-bottom: 32px;
     display: flex;
     justify-content: space-around;
 `
