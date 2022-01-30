@@ -16,9 +16,7 @@ const Navigator:React.FC<INavigator> = ({ navLinks }) => {
     return   <StyledNavigator>
                 {
                     navLinks.map((item) => (
-                        <>
                         <NavigatorItem key={item.id} icon={item.icon} text={item.text} active={selectedIndex===item.id} id={item.id} handleOnClick={handleOnClick}/>
-                        </>
                     ))
                 }
             </StyledNavigator>;

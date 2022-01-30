@@ -5,6 +5,7 @@ export const StyledNavigator = styled.nav`
     display: flex;
     flex-direction: column;
     width: 330px;
+    max-width: 100%;
     color: white;
     margin-top: 32px;
 `

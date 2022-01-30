@@ -1,10 +1,15 @@
 import styled from 'styled-components'
+import { IStyledSidebar } from '../../interfaces/ISidebar'
 
-export const StyledSidebar = styled.div`
+export const StyledSidebar = styled.div<IStyledSidebar>`
     width: 330px;
+    max-width: 100%;
     height: 100vh;
     background-color: ${({theme}) => theme.colors.primary};
     position: fixed;
+    z-index: 1;
+    transition: left 0.5s;
+    left: ${({ open }) => open ? '0px' : '-330px'};
 `
 export const SidebarSpacing = styled.div`
     width: 330px;
@@ -15,7 +20,8 @@ export const AvatarContainer = styled.div`
     padding-top: 16px;
     display: flex;
     height: 220px;
-    width: 320px;
+    width: 330px;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
 `
@@ -39,4 +45,26 @@ export const TitleContainer = styled.div`
     h2 {
         font-weight: 400
     }
+`
+
+export const CloseButtonContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 30px;
+    padding: 8px;
+`
+
+export const Appbar = styled.div`
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: white;
+    box-shadow: 0px 5px 9px -3px rgba(0,0,0,0.35);
+`
+
+export const AppbarMargin = styled.div`
+    height: 40px;
 `

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { IMainContainer } from '../../interfaces/IMainContainer';
 
 
 export const Container = styled.div`
@@ -8,6 +9,7 @@ export const Container = styled.div`
     padding: 0 15px;
     overflow: hidden;
 `
-export const MainContainer = styled.div`
+export const MainContainer = styled.div<IMainContainer>`
     display: flex;
+    flex-direction: ${({ small }) => small ? 'column' : 'row'}
 `
