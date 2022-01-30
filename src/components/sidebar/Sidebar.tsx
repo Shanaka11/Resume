@@ -1,12 +1,15 @@
-import { Appbar, AppbarMargin, Avatar, AvatarContainer, CloseButtonContainer, SidebarSpacing, StyledSidebar, TitleContainer } from "../styled/Sidebar.styled";
+import { Appbar, AppbarMargin, Avatar, AvatarContainer, CloseButtonContainer, ContactContainer, SidebarSpacing, StyledSidebar, TitleContainer } from "../styled/Sidebar.styled";
 import Navigator from './Navigator';
 
 import { MdDashboard } from 'react-icons/md';
-import { AiFillStar, AiTwotoneCalendar, AiFillLike } from 'react-icons/ai';
+import { AiFillStar, AiTwotoneCalendar, AiFillLike, AiFillMail } from 'react-icons/ai';
 import { GiGreekTemple, GiHamburgerMenu } from 'react-icons/gi';
-import { FaTools } from 'react-icons/fa';
+import { FaTools, FaGithub, FaMobileAlt, FaLinkedin } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
+import { ImLocation } from 'react-icons/im';
 ;
+
+
 
 import { INavigatorItem } from "../../interfaces/INavigatorItem";
 import { ISidebar } from "../../interfaces/ISidebar"
@@ -15,11 +18,6 @@ import Overlay from '../common/Overlay';
 import { useEffect, useState } from "react";
 import { Flex } from "../styled/Flex.styled";
 import { Container } from "../styled/Container.styled";
-;
-
-
-
-// TODO: Add Location / Contact Details at the bottom of the side bar
 
 const navLinks:INavigatorItem[] = [
     {
@@ -97,6 +95,23 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
                             <h2>Full Stack Engineer</h2>
                         </TitleContainer>
                         <Navigator navLinks={navLinks}/>
+                        <ContactContainer>
+                            <a href="https://goo.gl/maps/dDQGJuoP1mQLMZRZA" target="_blank" rel="noopener noreferrer">
+                                <ImLocation title='Kandy, Sri Lanka' size={25} color="white" />
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer">
+                                <FaMobileAlt title='+94 71 414 5 998' size={25} color="white"/>
+                            </a>
+                            <a href="mailto:shanakaabeysinghe@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <AiFillMail title='shanakaabeysinghe@gmail.com' size={25} color="white" />
+                            </a>
+                            <a href="https://linkedin.com/in/shanakaabeysinghe" target="_blank" rel="noopener noreferrer">
+                                <FaLinkedin title='LinkedIn Profile' size={25} color="white" />
+                            </a>
+                            <a href="https://github.com/shanaka11" target="_blank" rel="noopener noreferrer">
+                                <FaGithub title="Github Profile" size={25} color="white"/>
+                            </a>
+                        </ContactContainer>
                     </StyledSidebar>
                     {popover && <Overlay open={open} onClose={handleCloseOnClick}/>}
                     {!popover && <SidebarSpacing />}

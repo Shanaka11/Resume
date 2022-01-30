@@ -68,3 +68,9 @@ export const Appbar = styled.div`
 export const AppbarMargin = styled.div`
     height: 40px;
 `
+
+export const ContactContainer = styled.div`
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-around;
+`
