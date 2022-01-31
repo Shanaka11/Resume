@@ -9,7 +9,7 @@ export const StyledSidebar = styled.div<IStyledSidebar>`
     height: 100vh;
     background-color: ${({theme}) => theme.colors.primary};
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     transition: left 0.5s;
     left: ${({ open }) => open ? '0px' : '-330px'};
 `
@@ -39,12 +39,12 @@ export const TitleContainer = styled.div`
     text-align: center;
     color: white;
 
-    h1, h2 {
+    h1, h2, h4 {
         margin-top: 4px;
         margin-bottom: 4px;
     }
 
-    h2 {
+    h2, h4 {
         font-weight: 400
     }
 `
@@ -58,6 +58,7 @@ export const CloseButtonContainer = styled.div`
 `
 
 export const Appbar = styled.div`
+    z-index: 1;
     height: 40px;
     width: 100%;
     position: fixed;

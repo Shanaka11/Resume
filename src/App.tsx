@@ -6,6 +6,9 @@ import SummeryPage from './pages/SummeryPage';
 import { theme } from './Theme';
 
 
+// TODO: Add React Router to navigate through pages
+// TODO: Finish the pages
+
 function App() {
 
   const width = useMediaQuery()

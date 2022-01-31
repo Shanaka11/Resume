@@ -93,6 +93,7 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
                         <TitleContainer>
                             <h1>Shanaka Abeysinghe</h1>
                             <h2>Full Stack Engineer</h2>
+                            <h4>shanakaabeysinghe@gmail.com</h4>
                         </TitleContainer>
                         <Navigator navLinks={navLinks}/>
                         <ContactContainer>
