@@ -3,9 +3,6 @@ import { content } from '../../content'
 
 
 const WorkHistory = () => {
-
-
-
     return <History history={content.workHistory}/>;
 };
 

@@ -14,6 +14,7 @@ export const StyledNavigatorItem = styled.button<IStyledNavigatorItem>`
     display: flex;
     padding-left: 64px;
     height: 40px;
+    width: 100%;
     align-items: center;
     opacity: 0.6;
     cursor: pointer;
@@ -23,11 +24,17 @@ export const StyledNavigatorItem = styled.button<IStyledNavigatorItem>`
     color: white;
     border: none;
 
-    ${({ active }) => active && `opacity: 1;`}
+     
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
 
+      
+
+    ${({ active }) => active && `opacity: 1;`}
+ 
     &:hover, &:focus {
         opacity: 1;
         outline: none;
+        transform: scale(1.2);
     }
 
     span {

@@ -76,4 +76,12 @@ export const ContactContainer = styled.div`
     margin: 32px 0;
     display: flex;
     justify-content: space-around;
+
+    a {
+        transition: transform 0.2s ease-in;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 `
