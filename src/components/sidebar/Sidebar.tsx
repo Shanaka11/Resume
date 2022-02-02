@@ -7,8 +7,6 @@ import { GiGreekTemple, GiHamburgerMenu } from 'react-icons/gi';
 import { FaTools, FaGithub, FaMobileAlt, FaLinkedin } from 'react-icons/fa';
 import { IoMdClose } from 'react-icons/io';
 import { ImLocation } from 'react-icons/im';
-;
-
 
 
 import { INavigatorItem } from "../../interfaces/INavigatorItem";
@@ -18,6 +16,9 @@ import Overlay from '../common/Overlay';
 import { useEffect, useState } from "react";
 import { Flex } from "../styled/Flex.styled";
 import { Container } from "../styled/Container.styled";
+
+import { content } from '../../content';
+
 
 const navLinks:INavigatorItem[] = [
     {
@@ -91,25 +92,25 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
                             <Avatar src="src/images/avatar.jpeg" alt="Avatar" />
                         </AvatarContainer>
                         <TitleContainer>
-                            <h1>Shanaka Abeysinghe</h1>
-                            <h2>Full Stack Engineer</h2>
-                            <h4>shanakaabeysinghe@gmail.com</h4>
+                            <h1>{content.name}</h1>
+                            <h2>{content.title}</h2>
+                            <h4>{content.contact.email}</h4>
                         </TitleContainer>
                         <Navigator navLinks={navLinks}/>
                         <ContactContainer>
                             <a href="https://goo.gl/maps/dDQGJuoP1mQLMZRZA" target="_blank" rel="noopener noreferrer">
-                                <ImLocation title='Kandy, Sri Lanka' size={25} color="white" />
+                                <ImLocation title={content.contact.location} size={25} color="white" />
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer">
-                                <FaMobileAlt title='+94 71 414 5 998' size={25} color="white"/>
+                                <FaMobileAlt title={content.contact.phone} size={25} color="white"/>
                             </a>
-                            <a href="mailto:shanakaabeysinghe@gmail.com" target="_blank" rel="noopener noreferrer">
-                                <AiFillMail title='shanakaabeysinghe@gmail.com' size={25} color="white" />
+                            <a href={`mailto:${content.contact.email}`} target="_blank" rel="noopener noreferrer">
+                                <AiFillMail title={content.contact.email} size={25} color="white" />
                             </a>
-                            <a href="https://linkedin.com/in/shanakaabeysinghe" target="_blank" rel="noopener noreferrer">
+                            <a href={content.contact.linkedIn} target="_blank" rel="noopener noreferrer">
                                 <FaLinkedin title='LinkedIn Profile' size={25} color="white" />
                             </a>
-                            <a href="https://github.com/shanaka11" target="_blank" rel="noopener noreferrer">
+                            <a href={content.contact.github} target="_blank" rel="noopener noreferrer">
                                 <FaGithub title="Github Profile" size={25} color="white"/>
                             </a>
                         </ContactContainer>
