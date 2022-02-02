@@ -13,5 +13,7 @@ export interface IContent {
         linkedIn: string
     }
     skills: ISkill[],
-    workHistory: IHistory[]
+    workHistory: IHistory[],
+    projects: String[],
+    education: IHistory[]
 }

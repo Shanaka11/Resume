@@ -93,6 +93,11 @@ export const content:IContent = {
                         'Worked on debugging and issue fixing of the Backedn C# codebase'
                     ]
                 },
+            ],
+            experiance:[
+                'Use of Amazon Web Services such as S3, Lambda',
+                'Designing and managing a Hasura Graphql server',
+                'Using Microservices Architecture to handle 3rd Party Integration'
             ]
         },
         {
@@ -103,6 +108,17 @@ export const content:IContent = {
             avatarAlt: 'Axcenze',
             link: 'https://www.axcenze.com/'
         },
+    ],
+    projects: [],
+    education: [
+        {
+            avatar:'https://eng.pdn.ac.lk/assets/images/crest.png',
+            avatarAlt:'University Of Peradeniya',
+            link: 'https://www.pdn.ac.lk/',
+            time:'2013 - 2016',
+            title:'University Of Peradeniya, Sri Lanka',
+            description:'B.Sc (Hons) Engineering in Computer Engineering '
+        }
     ]
 }
 

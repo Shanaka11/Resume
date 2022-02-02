@@ -9,7 +9,7 @@ export interface IHistoryItem {
 export interface IHistory {
     time: string,
     title: string,
-    description: string,
+    description?: string,
     avatar: string,
     avatarAlt: string,
     link: string,
