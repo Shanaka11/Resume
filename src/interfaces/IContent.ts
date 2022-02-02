@@ -1,3 +1,5 @@
+import { IHistory } from "./Ihistory";
+import { ISkill } from "./ISkills";
 
 export interface IContent {
     name: string,
@@ -10,13 +12,6 @@ export interface IContent {
         github: string,
         linkedIn: string
     }
-    skills: ISkill[]
-}
-
-export interface ISkill {
-    label: string,
-    score: number,
-    link?: string,
-    experiance? : number,
-    projects?: number,
+    skills: ISkill[],
+    workHistory: IHistory[]
 }

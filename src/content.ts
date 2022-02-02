@@ -65,6 +65,44 @@ export const content:IContent = {
             label: 'C#',
             score: 75
         }
+    ],
+    workHistory: [
+        {
+            time: '2019 - present',
+            title: 'Full Stack Engineer - Project Basis - Five12Days',
+            description: 'React | Typescript | Django | Django Rest Framework | GraphQl | AWS (S3/Amplify/Lambda/CodeArtifact) | C# | CI/CD | postgreSQL | Git | Figma',
+            avatar: 'https://www.axcenze.com/images/logo2x.png',
+            avatarAlt: 'Axcenze',
+            link: 'https://www.axcenze.com/',
+            responsibilities: [
+                'UI/UX Design',
+                'Software Development'
+            ],
+            projects: [
+                {
+                    description:'Insurance Claim Platform for Waratah Analytics (Work In Progress)',
+                    details: [
+                        'Built with a react Frontend and a Hasura Graphql Backend with Material UI as the design library',
+                        'Few of the 3rd Party Integrations were handled through microservices deployed via AWS Lambda'
+                    ]
+                },
+                {
+                    description:'Booking Platform for Frolicz Familiy Hub, Australia (Work In Progress)',
+                    details: [
+                        'Responsible for the Frontend. Implemented using React with Material UI as the design library',
+                        'Worked on debugging and issue fixing of the Backedn C# codebase'
+                    ]
+                },
+            ]
+        },
+        {
+            time: '2019 - present',
+            title: 'Full Stack Engineer - Project Basis - Five12Days',
+            description: 'React | Typescript | Django | Django Rest Framework | GraphQl | AWS (S3/Amplify/Lambda/CodeArtifact) | C# | CI/CD | postgreSQL | Git | Figma',
+            avatar: 'https://www.axcenze.com/images/logo2x.png',
+            avatarAlt: 'Axcenze',
+            link: 'https://www.axcenze.com/'
+        },
     ]
 }
 

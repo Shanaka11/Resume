@@ -9,6 +9,12 @@ export const StyledSkillsList = styled.div`
 export const StyledSkillItem = styled.div`
     flex-basis: 33.333333%;
     padding: 4px;
+    background-color: white;
+    transition: transform 0.2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     p {
         margin: 4px 0;
