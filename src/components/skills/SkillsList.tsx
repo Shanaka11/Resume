@@ -3,12 +3,12 @@ import SkillItem from "./SkillItem";
 
 const SkillsList = () => {
   return  <StyledSkillsList>
-            <SkillItem />
-            <SkillItem />
-            <SkillItem />
-            <SkillItem />
-            <SkillItem />
-            <SkillItem />
+            <SkillItem value={10}/>
+            <SkillItem value={30}/>
+            <SkillItem value={54}/>
+            <SkillItem value={90}/>
+            <SkillItem value={87}/>
+            <SkillItem value={60}/>
           </StyledSkillsList>;
 };
 

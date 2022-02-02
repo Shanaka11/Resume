@@ -2,12 +2,14 @@ import styled from "styled-components"
 import { IStyledNavigatorItem } from "../../interfaces/INavigatorItem"
 
 export const StyledNavigator = styled.nav`
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     width: 330px;
     max-width: 100%;
     color: white;
     margin-top: 32px;
+    flex-grow: 1;
+    overflow-y: auto;
 `
 
 export const StyledNavigatorItem = styled.button<IStyledNavigatorItem>`

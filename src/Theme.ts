@@ -1,6 +1,7 @@
 export const theme = {
     colors: {
-        primary: '#605D5D'
+        primary: '#605D5D',
+        primaryLight: '#bfbebe'
     },
     breakpoints: {
         xs: 480,
