@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 import { ISkillItem } from "../../interfaces/ISkills";
 import { Progressbar, ProgressbarContainer, StyledSkillItem } from "../styled/Skills.styled";
 
-const SkillItem:React.FC<ISkillItem> = ({ value }) => {
+const SkillItem:React.FC<ISkillItem> = ({ skill }) => {
 
   const [barValue, setBarValue] = useState(0)
 
   useEffect(() => {
-    setBarValue(value)
+    setBarValue(skill.score)
   })
 
   return  <StyledSkillItem>
-            <p>React</p>
+            <p>{skill.label}</p>
             <ProgressbarContainer>
               <Progressbar value={barValue}/>
             </ProgressbarContainer>

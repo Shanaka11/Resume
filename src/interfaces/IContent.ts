@@ -3,10 +3,10 @@ export interface IContent {
     name: string,
     title: string,
     aboutMe: string,
-    skills: skill[]
+    skills: ISkill[]
 }
 
-export interface skill {
+export interface ISkill {
     label: string,
     score: number,
     link?: string,

@@ -73,7 +73,6 @@ export const AppbarMargin = styled.div`
 `
 
 export const ContactContainer = styled.div`
-    // margin-top: auto;
     margin: 32px 0;
     display: flex;
     justify-content: space-around;

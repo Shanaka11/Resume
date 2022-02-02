@@ -1,14 +1,17 @@
 import { StyledSkillsList } from "../styled/Skills.styled";
 import SkillItem from "./SkillItem";
 
+import { content } from '../../content'
+import { ISkill } from "../../interfaces/IContent";
+
+
 const SkillsList = () => {
+
+  console.log(content.skills)
   return  <StyledSkillsList>
-            <SkillItem value={10}/>
-            <SkillItem value={30}/>
-            <SkillItem value={54}/>
-            <SkillItem value={90}/>
-            <SkillItem value={87}/>
-            <SkillItem value={60}/>
+            {content.skills.map((item: ISkill, index: number) => (
+              <SkillItem key={index} skill={item} />
+            ))}
           </StyledSkillsList>;
 };
 

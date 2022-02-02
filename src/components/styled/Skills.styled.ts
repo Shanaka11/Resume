@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ISkillItem } from '../../interfaces/ISkills'
+import { IProgressbar } from '../../interfaces/ISkills'
 
 export const StyledSkillsList = styled.div`
     display: flex;
@@ -33,7 +33,7 @@ export const ProgressbarContainer = styled.div`
     border-radius: 5px;
 `
 
-export const Progressbar = styled.div<ISkillItem>`
+export const Progressbar = styled.div<IProgressbar>`
     z-index: 1;
     background-color: ${({ theme }) => theme.colors.primary};
     height: 10px;
