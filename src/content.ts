@@ -105,7 +105,7 @@ export const content:IContent = {
     ],
     workHistory: [
         {
-            time: '2019 - present',
+            time: '2019 - Present',
             title: 'Full Stack Engineer - Project Basis - Five12Days (SL)',
             description: 'React | Typescript | Django | Django Rest Framework | GraphQl | AWS (S3/Amplify/Lambda/CodeArtifact) | C# | CI/CD | postgreSQL | Git | Figma',
             avatar: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/F12Days.svg',
@@ -146,7 +146,7 @@ export const content:IContent = {
             ]
         },
         {
-            time: '2021(DEC) - present',
+            time: '2021-12 to Present',
             title: 'Senior Technical Consultant - Full Time Permanent - Axzenze Pvt Ltd (SL)',
             description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
             avatar: 'https://www.axcenze.com/images/logo2x.png',
@@ -164,7 +164,7 @@ export const content:IContent = {
             ]
         },
         {
-            time: '2019 - 2021',
+            time: '2020-01 to 2021-11',
             title: 'Senior Software Engineer - Full Time Permanent - Addovation Pvt Ltd (Sweeden, Site KAN01 )',
             description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
             avatar: 'https://www.addovation.com/wp-content/themes/addovation/assets/images/logo-positiv.svg',
@@ -184,7 +184,7 @@ export const content:IContent = {
             ]
         },
         {
-            time: '2016 - 2019',
+            time: '2016-09 to 2019-12',
             title: 'Software Engineer - Full Time Permanent - IFS R&D International (Sweeden, Site KDY)',
             description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
             avatar: 'https://www.ifs.com/content/images/logo.png',
