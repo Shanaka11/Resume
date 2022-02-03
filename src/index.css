@@ -5,20 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-/* 
-  background-color: #605D5D;
-  animation: intro 1.5s ease-in-out forwards; */
 }
 
-/* @keyframes intro {
-    75%{
-        background-color: #605D5D;
-    }
 
-    100%{
-        background-color: white;
-    }
-} */
 
 code {
   font-family: 'Roboto', sans-serif;

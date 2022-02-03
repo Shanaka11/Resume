@@ -1,10 +1,47 @@
 import { IContent } from './interfaces/IContent';
+import { IProject } from './interfaces/IProject';
 
+const projects:IProject[] = [
+    {
+        id: 1,
+        title: 'Booking Management System',
+        subtitle: 'In Progress',
+        summary: [
+            'A web application to handle bookings and prmote events for Frolicz Family Hub'
+        ],
+        techStack: 'React | C# | AWS Amplify | Azure Functions',
+        image: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/frolicz.png',
+        link: 'https://www.frolicz.com.au/'
+    },
+    {
+        id: 2,
+        title: 'Insurance Application Management System',
+        subtitle: 'In Progress',
+        summary: [
+            'A web application to handle bookings and prmote events for Frolicz Family Hub'
+        ],
+        techStack: 'React | Express | Graphql | AWS Lambda | Python',
+        image: '',
+        link: '#'
+    },
+    {
+        id: 3,
+        title: 'Project Resume',
+        subtitle: 'Completed',
+        summary: [
+            'A simple web page to display your achivements'
+        ],
+        techStack: 'React | AWS S3,Amplify',
+        image: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/Resume.jpg',
+        link: '#'
+    }
+]
 
 export const content:IContent = {
     name: "Shanaka Abeysinghe",
     title: "Full Stack Engineer",
     aboutMe: "I am an accomplished Software Engineer with more than five years of industry experience. During that period, I have gained extensive knowledge and experience in Software Development, Testing, Deploying, and Delivery. Furthermore, I'm well versed in Requirement gathering, Client handling, Problem-solving, and Solution Designing.I consider myself a professional who believes Quality of Delivery and Customer Satisfaction are the keys to the success of a business. Therefore always strive to achieve that.I find joy in learning and problem solving and a bit of soccer as well.",
+    avatar: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/911080710A_2x2.jpeg',
     contact: {
         phone: '+94 71 414 5 998',
         email: 'shanakaabeysinghe@gmail.com',
@@ -109,7 +146,7 @@ export const content:IContent = {
             link: 'https://www.axcenze.com/'
         },
     ],
-    projects: [],
+    projects: projects,
     education: [
         {
             avatar:'https://eng.pdn.ac.lk/assets/images/crest.png',
@@ -121,5 +158,4 @@ export const content:IContent = {
         }
     ]
 }
-
 export default content
