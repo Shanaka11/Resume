@@ -12,7 +12,7 @@ const ProjectThumbnail:React.FC<IProjectObject> = ({ project }) => {
                     <div>
                         {
                             project.summary.map((item:string, index:number) => (
-                                <p>{item}</p>
+                                <p key={index}>{item}</p>
                             ))
                         }
                         <p><strong>Tech Stack</strong></p>

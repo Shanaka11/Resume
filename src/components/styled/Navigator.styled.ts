@@ -8,6 +8,7 @@ export const StyledNavigator = styled.nav`
     margin-top: 32px;
     flex-grow: 1;
     overflow-y: auto;
+    overflow-x: hidden;
 `
 
 export const StyledNavigatorItem = styled.button<IStyledNavigatorItem>`

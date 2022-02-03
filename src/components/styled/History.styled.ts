@@ -36,6 +36,10 @@ export const StyledHistoryItem = styled.div`
         padding-left: 16px;
     }
 
+    li {
+        margin: 4px 0;
+    }
+
     li > ul {
         margin: 16px 0;
     }
