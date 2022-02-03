@@ -1,7 +1,7 @@
-import { IProject } from "../../interfaces/Ihistory";
+import { IProjectHistory } from "../../interfaces/IHistory";
 
 
-const ProjectList:React.FC<IProject> = ({ description, details }) => {
+const ProjectList:React.FC<IProjectHistory> = ({ description, details }) => {
 
     console.log(description)
     if (details && details.length > 0){

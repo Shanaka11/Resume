@@ -1,4 +1,4 @@
-import { IHistoryItem, IProject } from '../../interfaces/Ihistory';
+import { IHistoryItem, IProjectHistory } from '../../interfaces/IHistory';
 import { StyledHistoryItem } from '../styled/History.styled';
 import ProjectList from './ProjectList';
 
@@ -28,7 +28,7 @@ const HistoryItem:React.FC<IHistoryItem> = ({ historyItem }) => {
                         </h4>
                         <ul>
                             {
-                                historyItem.projects.map((item:IProject, index:number) => (
+                                historyItem.projects.map((item:IProjectHistory, index:number) => (
                                     <ProjectList key={index} description={item.description} details={item.details}/>
                                 ))
                             }

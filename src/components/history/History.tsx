@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { IHistory, IHistoryArray } from '../../interfaces/Ihistory';
+import { IHistory, IHistoryArray } from '../../interfaces/IHistory';
 import { Logo, LogoContainer, StyledHistory } from '../styled/History.styled';
 import HistoryItem from './HistoryItem';
 

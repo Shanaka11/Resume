@@ -1,5 +1,6 @@
 import Title from "../components/common/Title";
 import EducationHistory from "../components/education/EducationHistory";
+import ProjectList from "../components/project/ProjectList";
 import SkillsList from "../components/skills/SkillsList";
 import { Page } from "../components/styled/Page.styled";
 import WorkHistory from "../components/work/WorkHistory";
@@ -15,6 +16,7 @@ const SummeryPage = () => {
                 <Title title="Work History" margin/>
                 <WorkHistory />
                 <Title title="Projects" margin/>
+                <ProjectList />
                 <Title title="Education" margin/>
                 <EducationHistory />
             </Page>;

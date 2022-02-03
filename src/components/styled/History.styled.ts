@@ -10,7 +10,7 @@ export const StyledHistory = styled.div`
         z-index: -1;
         content: "";
         position: absolute;
-        background-color: ${({ theme }) => theme.colors.primary};
+        background-color: ${({ theme }) => theme.colors.line};
         grid-column: 1/2;
         width: 2px;
         height: 100%;

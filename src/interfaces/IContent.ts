@@ -1,10 +1,13 @@
-import { IHistory } from "./Ihistory";
+
+import { IHistory } from "./IHistory";
+import { IProject } from "./IProject";
 import { ISkill } from "./ISkills";
 
 export interface IContent {
     name: string,
     title: string,
     aboutMe: string,
+    avatar: string,
     contact: {
         phone: string,
         email: string,
@@ -14,6 +17,6 @@ export interface IContent {
     }
     skills: ISkill[],
     workHistory: IHistory[],
-    projects: String[],
+    projects: IProject[],
     education: IHistory[]
 }

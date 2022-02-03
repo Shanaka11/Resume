@@ -14,11 +14,11 @@ export interface IHistory {
     avatarAlt: string,
     link: string,
     responsibilities?: string[],
-    projects?: IProject[],
+    projects?: IProjectHistory[],
     experiance?: string[]
 }
 
-export interface IProject {
+export interface IProjectHistory {
     description: string
     details?: string[]
 }
