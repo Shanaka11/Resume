@@ -106,45 +106,111 @@ export const content:IContent = {
     workHistory: [
         {
             time: '2019 - present',
-            title: 'Full Stack Engineer - Project Basis - Five12Days',
+            title: 'Full Stack Engineer - Project Basis - Five12Days (SL)',
             description: 'React | Typescript | Django | Django Rest Framework | GraphQl | AWS (S3/Amplify/Lambda/CodeArtifact) | C# | CI/CD | postgreSQL | Git | Figma',
-            avatar: 'https://www.axcenze.com/images/logo2x.png',
-            avatarAlt: 'Axcenze',
-            link: 'https://www.axcenze.com/',
+            avatar: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/F12Days.svg',
+            avatarAlt: 'Five12Days',
+            link: '#',
             responsibilities: [
                 'UI/UX Design',
-                'Software Development'
+                'Software Development',
+                'Database Management',
+                'CI/CD, Branching and Migrations',
+                'Software Architecture Design'
             ],
             projects: [
                 {
                     description:'Insurance Claim Platform for Waratah Analytics (Work In Progress)',
                     details: [
-                        'Built with a react Frontend and a Hasura Graphql Backend with Material UI as the design library',
-                        'Few of the 3rd Party Integrations were handled through microservices deployed via AWS Lambda'
+                        'Frontend Using React',
+                        'Microservices & Integrations through AWS Lambda / Express',
+                        'Hasura graphql server management'
                     ]
                 },
                 {
                     description:'Booking Platform for Frolicz Familiy Hub, Australia (Work In Progress)',
                     details: [
-                        'Responsible for the Frontend. Implemented using React with Material UI as the design library',
-                        'Worked on debugging and issue fixing of the Backedn C# codebase'
+                        'Client Wep Application',
+                        'Admin Web Application'
                     ]
                 },
             ],
             experiance:[
-                'Use of Amazon Web Services such as S3, Lambda',
+                'Amazon Web Services such as S3, Lambda, Amplify',
+                'CI/CD Pipelines with AWS Code Pipeline & Git Flow',
                 'Designing and managing a Hasura Graphql server',
-                'Using Microservices Architecture to handle 3rd Party Integration'
+                'Microservice Architecture to handle 3rd Party Integration',
+                'Design Libraries such as MaterialUI to design and implement UI in react',
+                'Context API, Apollo, React Query and Redux for state management',
+                'Client Handling'
             ]
         },
         {
-            time: '2019 - present',
-            title: 'Full Stack Engineer - Project Basis - Five12Days',
-            description: 'React | Typescript | Django | Django Rest Framework | GraphQl | AWS (S3/Amplify/Lambda/CodeArtifact) | C# | CI/CD | postgreSQL | Git | Figma',
+            time: '2021(DEC) - present',
+            title: 'Senior Technical Consultant - Full Time Permanent - Axzenze Pvt Ltd (SL)',
+            description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
             avatar: 'https://www.axcenze.com/images/logo2x.png',
             avatarAlt: 'Axcenze',
-            link: 'https://www.axcenze.com/'
+            link: 'https://www.axcenze.com/',
+            responsibilities: [
+                'Design & Implement Client Customizations for IFS Applications',
+                'IFS Report designing'
+            ],
+            experiance:[
+                'C#',
+                'SQL/PLSQL',
+                'IFS Aurena',
+                'Working on IFS Integration solutions for 3rd Party Applications'
+            ]
         },
+        {
+            time: '2019 - 2021',
+            title: 'Senior Software Engineer - Full Time Permanent - Addovation Pvt Ltd (Sweeden, Site KAN01 )',
+            description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
+            avatar: 'https://www.addovation.com/wp-content/themes/addovation/assets/images/logo-positiv.svg',
+            avatarAlt: 'Addovation',
+            link: 'https://www.addovation.com/',
+            responsibilities: [
+                'Design & Implement Client Customizations for IFS Applications',
+                'Uplift Customizations to newer IFS versions',
+                'Testing and manage deliveries',
+                'Design & Implement IFS Integrations & Transformers (XSL / Java)'
+            ],
+            experiance:[
+                'C#',
+                'SQL/PLSQL',
+                'Java',
+                'Client Handling'
+            ]
+        },
+        {
+            time: '2016 - 2019',
+            title: 'Software Engineer - Full Time Permanent - IFS R&D International (Sweeden, Site KDY)',
+            description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
+            avatar: 'https://www.ifs.com/content/images/logo.png',
+            avatarAlt: 'IFS',
+            link: 'https://www.ifs.com/',
+            responsibilities: [
+                'Implement Client Customizations for IFS Applications',
+                'Uplift Customizations to newer IFS versions',
+                'Testing and manage deliveries',
+            ],
+            projects: [
+                {
+                    description:'Customizations for Sizewise Rentals LLC',
+                    details: [
+                        'Complete overhaul of Rental Component',
+                        'Introduction of new Invoice Systems'
+                    ]
+                }
+            ],
+            experiance:[
+                'C#',
+                'SQL/PLSQL',
+                'Delivery Management',
+                'Version control using Harvest',
+            ]
+        }
     ],
     projects: projects,
     education: [
