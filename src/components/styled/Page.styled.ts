@@ -11,7 +11,7 @@ export const Page = styled.div`
 
     @keyframes slide-in {
         0%{
-            transform: translateY(100%)
+            transform: translateY(100vh)
         }
     }
 `
