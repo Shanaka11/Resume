@@ -52,55 +52,68 @@ export const content:IContent = {
     skills: [
         {
             label: 'React',
-            score: 89
+            score: 89,
+            description: 'More than 2 years of experiance. Worked on number of freelance projects for clients around the globe.'
         },
         {
             label: 'Django',
-            score: 80
+            score: 80,
+            description: 'More than 2 years of experiance. Worked on a freelance projects for an south american client. Used in many of my personal projects.'
         },
         {
             label: 'AWS (S3/Amplify/Lambda)',
-            score: 67
+            score: 67,
+            description: 'Preferred cloud service provider. Maintained a private package repository using Code Artifact. Used Lamda to deploy microservices as serverless functions. Amplify is the main service used to deploy react apps.'
         },
         {
             label: 'Typescript',
-            score: 75
+            score: 75,
+            description: 'Used in conjunction with React projects. experiance using with libraries such as React-Query and React-Hook-Form.'
         },
         {
             label: 'Django Rest Framework',
-            score: 76
+            score: 76,
+            description: 'When the need of rest apis were required I resorted to Django Rest Framework. Used in multiple projects for about 2 years.'
         },
         {
-            label: 'Version Control Systems ( git / SVN) ',
-            score: 70
+            label: 'Version Control Systems ( git) ',
+            score: 70,
+            description: 'In addition to version controlling. Github was used to manage deployments.'
         },
         {
             label: 'Figma',
-            score: 60
+            score: 60,
+            description: 'My main design tool. Experiances in prototyping as well.'
         },
         {
             label: 'Python',
-            score: 65
+            score: 55,
+            description: 'Close to 2 years of expeirance. Mostly have familier with functionality required in Django.'
         },
         {
             label: 'SQL / PLSQL',
-            score: 89
+            score: 89,
+            description: 'More than 5 years of experiance. Mainly in PLSQL development. This is the main backend technology used in IFS Applications.'
         },
         {
             label: 'NodeJS',
-            score: 85
+            score: 85,
+            description: 'Familier with multiple node libraries such as Axios, Express and so on.'
         },
         {
             label: 'GraphQL',
-            score: 86
+            score: 86,
+            description: 'Used in a one major project recently. Server was implemented using Hasura Graphql Services. In the frontend apollo client was used for data fetching.'
         },
         {
             label: 'ERP (IFS Applications)',
-            score: 95
+            score: 95,
+            description: 'Hands on experiance on developing customizations on IFS Applications. From applications 8 upto 10 and Aurena. On both client and server customizations.'
         },
         {
             label: 'C#',
-            score: 75
+            score: 50,
+            description: 'Close to 5 years experiance. A big issue would be that the experiance is in relation to IFS Framework therefore knowledge on some c# functionlaity could be lacking.'
         }
     ],
     workHistory: [

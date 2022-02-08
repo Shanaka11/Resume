@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { INavigatorItem } from "../../interfaces/INavigatorItem";
-import { StyledNavigatorItem } from "../styled/Navigator.styled";
+import { StyledLink, StyledNavigatorItem } from "../styled/Navigator.styled";
 
-const NavigatorItem:React.FC<INavigatorItem> = ({ active, icon, text, handleOnClick, id}) => {
+const NavigatorItem:React.FC<INavigatorItem> = ({ active, icon, text, handleOnClick, id, link}) => {
 
     // States
     const [coords, setCoords] = useState({ x: -1, y: -1})
@@ -31,17 +32,21 @@ const NavigatorItem:React.FC<INavigatorItem> = ({ active, icon, text, handleOnCl
         handleOnClick && handleOnClick(id)
     }
 
-    return  <StyledNavigatorItem active={active} left={coords.x} top={coords.y} onClick={handleButtonOnClick}>
-                {icon}
-                <h4>{text}</h4>
-                {isRippling ? (
-                    <span />
-                )
-                :
-                (
-                    ''
-                )}
-            </StyledNavigatorItem>;
+    return  <StyledLink>
+                <Link to={link}>
+                    <StyledNavigatorItem active={active} left={coords.x} top={coords.y} onClick={handleButtonOnClick}>
+                        {icon}
+                        <h4>{text}</h4>
+                        {isRippling ? (
+                            <span />
+                        )
+                        :
+                        (
+                            ''
+                        )}
+                    </StyledNavigatorItem>
+                </Link>
+            </StyledLink>;
 };
 
 export default NavigatorItem;

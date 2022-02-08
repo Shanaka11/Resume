@@ -12,7 +12,7 @@ const SummeryPage = () => {
                 <p>I consider myself a professional who believes Quality of Delivery and Customer Satisfaction are the keys to the success of a business. Therefore always strive to achieve that goal.</p>
                 <p>I find joy in learning new technology, problem solving and a bit of soccer as well.</p>
                 <Title title="Skills & Experience" margin/>
-                <SkillsList />
+                <SkillsList list="summary"/>
                 <Title title="Work History" margin/>
                 <WorkHistory />
                 <Title title="Projects" margin/>

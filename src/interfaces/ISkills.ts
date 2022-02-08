@@ -10,6 +10,9 @@ export interface ISkill {
     label: string,
     score: number,
     link?: string,
-    experiance? : number,
-    projects?: number,
+    description: string
+}
+
+export interface ISkillList {
+    list: 'summary' | 'detailed'
 }

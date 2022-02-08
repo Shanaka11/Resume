@@ -5,7 +5,8 @@ export interface INavigatorItem {
     icon: ReactElement,
     text: string,
     active?: boolean,
-    handleOnClick?: (id: number) => void
+    handleOnClick?: (id: number) => void,
+    link: string
 }
 
 export interface IStyledNavigatorItem {

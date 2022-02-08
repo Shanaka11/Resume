@@ -1,5 +1,7 @@
 import { INavigatorItem } from "./INavigatorItem";
 
 export interface INavigator {
-    navLinks: INavigatorItem[]
+    navLinks: INavigatorItem[],
+    selectedIndex: number | undefined,
+    handleOnClick: () => void
 }

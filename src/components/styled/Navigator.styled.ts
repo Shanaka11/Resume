@@ -32,7 +32,7 @@ export const StyledNavigatorItem = styled.button<IStyledNavigatorItem>`
 
     ${({ active }) => active && `opacity: 1;`}
  
-    &:hover, &:focus {
+    &:hover {
         opacity: 1;
         outline: none;
         transform: scale(1.2);
@@ -72,5 +72,11 @@ export const StyledNavigatorItem = styled.button<IStyledNavigatorItem>`
           transform: scale(35);
           opacity: 0;
         }
+      }
+`
+
+export const StyledLink = styled.div`
+      a {
+        text-decoration: none;
       }
 `

@@ -18,38 +18,45 @@ import { Flex } from "../styled/Flex.styled";
 import { Container } from "../styled/Container.styled";
 
 import { content } from '../../content';
+import { useLocation } from "react-router-dom";
 
 
 const navLinks:INavigatorItem[] = [
     {
         id: 0,
         icon: <MdDashboard size={25}/>,
-        text: 'Summery'
+        text: 'Summery',
+        link: '/'
     },
     {
         id: 1,
         icon: <AiFillStar size={25}/>,
-        text: 'Skills & Experiances'
+        text: 'Skills & Experiances',
+        link: '/skills'
     },
     {
         id: 2,
         icon: <AiTwotoneCalendar size={25}/>,
-        text: 'Work History'
+        text: 'Work History',
+        link: '/work'
     },
     {
         id: 3,
-        icon: <GiGreekTemple size={25}/>,
-        text: 'Education'
+        icon: <FaTools size={25}/>,
+        text: 'Projects',
+        link: '/projects'
     },
     {
         id: 4,
-        icon: <FaTools size={25}/>,
-        text: 'Projects'
+        icon: <GiGreekTemple size={25}/>,
+        text: 'Education',
+        link: '/education'
     },
     {
         id: 5,
         icon: <AiFillLike size={25}/>,
-        text: 'References'
+        text: 'References',
+        link: '/reference'
     },
   ]
 
@@ -58,6 +65,10 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
     // States
     const [open, setOpen] = useState(true)
     const [mount, setMount] = useState(true)
+    const [selectedIndex, setSelectedIndex] = useState<number | undefined>(0)
+
+    // React Router
+    const location = useLocation()
 
     // UseEffect
     useEffect(() => {
@@ -69,6 +80,10 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
             document.body.style.overflow = 'scroll'
         }
     }, [popover, mount])
+
+    useEffect(() => {
+        setSelectedIndex(navLinks.find( (item:INavigatorItem) => item.link === location.pathname)?.id)
+    }, [location])
 
     // Methods
     const handleCloseOnClick = () => {
@@ -96,7 +111,7 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
                             <h2>{content.title}</h2>
                             <h4>{content.contact.email}</h4>
                         </TitleContainer>
-                        <Navigator navLinks={navLinks}/>
+                        <Navigator navLinks={navLinks} selectedIndex={selectedIndex} handleOnClick={handleCloseOnClick}/>
                         <ContactContainer>
                             <a href="https://goo.gl/maps/dDQGJuoP1mQLMZRZA" target="_blank" rel="noopener noreferrer">
                                 <ImLocation title={content.contact.location} size={25} color="white" />

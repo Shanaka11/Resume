@@ -33,6 +33,13 @@ export const StyledSkillItem = styled.div`
     }
 `
 
+export const StyledSkillItemLarge = styled.div`
+    flex-basis: 50%;
+    padding: 4px;
+    background-color: white;
+    min-height: 150px;
+`
+
 export const ProgressbarContainer = styled.div`
     background-color: ${({ theme }) => theme.colors.primaryLight};
     width: 100%;
