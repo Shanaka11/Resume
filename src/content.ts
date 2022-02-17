@@ -57,17 +57,25 @@ const projects:IProject[] = [
         ],
         techStack: 'React | AWS S3,Amplify',
         image: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/Resume.jpg',
-        link: '#',
+        link: 'https://shanakaabeysinghe.five12days.com/',
         otherLinks: [
+            {
+                type: 'Source',
+                link: 'https://github.com/Shanaka11/Resume'
+            },
             {
                 type: 'Design',
                 link: 'https://www.figma.com/file/AzLjTS8KAppAgVvWAmp34o/ResumeWeb?node-id=0%3A1'
+            },
+            {
+                type: 'Demo',
+                link: 'https://shanakaabeysinghe.five12days.com/'
             }
         ],
         details: [
             'Simple website site designed to showcase your skills & experiance and is fully responsive',
             'Since this is only a front-end project implementation is done using React and Typescript. Additionally Styled Components and React-Router Libraries are used to help styling and routing.',
-            'All the animations and styling is done without using any 3rd party libraries'
+            'All the animations and styling is done without using any 3rd party libraries.'
         ]
     }
 ]
