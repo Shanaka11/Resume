@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import DownloadBtn from './components/common/DownloadBtn';
 import ScrollToTop from './components/common/ScrollToTop';
 import Sidebar from './components/sidebar/Sidebar';
 import { Container, MainContainer } from './components/styled/Container.styled';
@@ -33,6 +34,7 @@ function App() {
             <Route path='/education' element={<EducationPage />} />
             <Route path='/reference' element={<ReferencePage />} />
           </Routes>
+          <DownloadBtn />
         </Container>
       </MainContainer>
     </ThemeProvider>
