@@ -38,11 +38,15 @@ const projects:IProject[] = [
         title: 'Insurance Application Management System',
         subtitle: 'In Progress',
         summary: [
-            'A web application to handle bookings and prmote events for Frolicz Family Hub'
+            'A platform to process insurance applications/claims for insurance brokers, Mainly for the cyber security domain'
         ],
         techStack: 'React | Express | Graphql | AWS Lambda | Python',
-        // image: '',
-        link: '#'
+        link: '#',
+        details: [
+            'The platform was developed to process insurance claims for insurance brokers. It supports multiple tenants with theming capabilities. The development was for Waratah Analytics.',
+            'I was responsible for the full-stack development of this platform under the guidance of a tech lead. Additionally, I was partially involved in solution design as well.',
+            'Front-End implementations have used React and Typescript using Material UI. The back-end implementation used a Hasura GraphQL server. Apollo client as the primary state manager, Auth0 to handle authentication. Additional business logic was implemented as Microservices and was deployed serverless as AWS Lamda. Microservices implementation using docker, python, and NodeJS.'
+        ]
     },
     {
         id: 3,
@@ -53,7 +57,18 @@ const projects:IProject[] = [
         ],
         techStack: 'React | AWS S3,Amplify',
         image: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/Resume.jpg',
-        link: '#'
+        link: '#',
+        otherLinks: [
+            {
+                type: 'Design',
+                link: 'https://www.figma.com/file/AzLjTS8KAppAgVvWAmp34o/ResumeWeb?node-id=0%3A1'
+            }
+        ],
+        details: [
+            'Simple website site designed to showcase your skills & experiance',
+            'Since this is only a front-end project implementation is done using React and Typescript. Additionally Styled Components and React-Router Libraries are used to help styling and routing.',
+            'All the animations and styling is done without using any 3rd party libraries'
+        ]
     }
 ]
 

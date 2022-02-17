@@ -17,7 +17,7 @@ const ProjectDetailPage = () => {
                 <>
                     <Title title={projectData.title} />
                     <ProjectLinks links={projectData.otherLinks}/>
-                    <p>{projectData.techStack}</p>
+                    <p><strong>{projectData.techStack}</strong></p>
                     <p>{projectData.summary}</p>
                     <StyledImg src={projectData.image ?? 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/GenericProject.jpeg'} alt={projectData.title}/>
                     {
