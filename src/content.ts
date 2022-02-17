@@ -7,11 +7,31 @@ const projects:IProject[] = [
         title: 'Booking Management System',
         subtitle: 'In Progress',
         summary: [
-            'A web application to handle bookings and prmote events for Frolicz Family Hub'
+            'A web application to handle bookings and promote events for Frolicz Family Hub'
         ],
         techStack: 'React | C# | AWS Amplify | Azure Functions',
         image: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/frolicz.png',
-        link: 'https://www.frolicz.com.au/'
+        link: 'https://www.frolicz.com.au/',
+        otherLinks: [
+            {
+                type: 'Source',
+                link: 'https://github.com/Shanaka11/AeseckProFrontend'
+            },
+            {         
+                type: 'Design',   
+                link: 'https://www.figma.com/file/8ydbAQ22MwBMTBQUSIyVw2/Com-Center?node-id=0%3A1'
+            },
+            {
+                type: 'Demo',
+                link: 'https://frolicz.aseckpro.com.au/'
+            }
+        ],
+        details: [
+            'This web application was developed to handle bookings and promote events for Frolicz Family Hub. In addition to bookings, membership maintenance and payment handling were provided by an admin interface.',
+            'I was responsible for the design and implementation of the frontend for both the client-facing and admin interface according to the client specification. Additionally, I was involved in the testing and implementation of some backend features as well.  Furthermore was involved in setting up CI/CD pipelines using AWS Codepipeline and AWS Amplify.',
+            'Frontend implementation used React & Typescript with the use of React - Query and context API for state management. Deployment was done using AWS Amplify. Backend implementation was done using C# and entity framework and deployed using Azure functions.'
+        ]
+
     },
     {
         id: 2,
@@ -21,7 +41,7 @@ const projects:IProject[] = [
             'A web application to handle bookings and prmote events for Frolicz Family Hub'
         ],
         techStack: 'React | Express | Graphql | AWS Lambda | Python',
-        image: '',
+        // image: '',
         link: '#'
     },
     {
@@ -118,7 +138,7 @@ export const content:IContent = {
     ],
     workHistory: [
         {
-            time: '2019 - Present',
+            time: '2019-02 - Present',
             title: 'Full Stack Engineer - Project Basis - Five12Days (SL)',
             description: 'React | Typescript | Django | Django Rest Framework | GraphQl | AWS (S3/Amplify/Lambda/CodeArtifact) | C# | CI/CD | postgreSQL | Git | Figma',
             avatar: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/F12Days.svg',

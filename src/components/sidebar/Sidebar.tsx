@@ -52,12 +52,12 @@ const navLinks:INavigatorItem[] = [
         text: 'Education',
         link: '/education'
     },
-    {
-        id: 5,
-        icon: <AiFillLike size={25}/>,
-        text: 'References',
-        link: '/reference'
-    },
+    // {
+    //     id: 5,
+    //     icon: <AiFillLike size={25}/>,
+    //     text: 'References',
+    //     link: '/reference'
+    // },
   ]
 
 const Sidebar:React.FC<ISidebar> = ( { popover } ) => {

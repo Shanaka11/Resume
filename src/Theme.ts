@@ -5,6 +5,7 @@ export const theme = {
         line: '#dddddd'
     },
     breakpoints: {
+        xss: 300,
         xs: 480,
         sm: 600,
         smd: 850,

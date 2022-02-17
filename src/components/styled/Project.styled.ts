@@ -74,3 +74,27 @@ export const Box = styled.img`
         display: none;
     }
 `
+
+export const StyledProjectLinks = styled.div`
+    display: flex;
+    align-items: center;
+    a:nth-last-of-type(2) {
+        margin-right: auto;
+    }
+`
+
+export const StyledLink = styled.a`
+    margin-right: 16px;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in;
+
+    &:hover {
+        opacity: 1;
+    }
+`
+
+export const StyledImg = styled.img`
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+`
