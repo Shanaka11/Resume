@@ -82,7 +82,7 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
     }, [popover, mount])
 
     useEffect(() => {
-        setSelectedIndex(navLinks.find( (item:INavigatorItem) => item.link === location.pathname)?.id)
+        setSelectedIndex(navLinks.find( (item:INavigatorItem) => item.link.includes(location.pathname))?.id)
     }, [location])
 
     // Methods
