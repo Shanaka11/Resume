@@ -9,7 +9,7 @@ export const StyledSidebar = styled.div<IStyledSidebar>`
     height: 100vh;
     background-color: ${({theme}) => theme.colors.primary};
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     transition: left 0.5s;
     left: ${({ open }) => open ? '0px' : '-330px'};
 `
@@ -58,7 +58,7 @@ export const CloseButtonContainer = styled.div`
 `
 
 export const Appbar = styled.div`
-    z-index: 1;
+    z-index: 2;
     height: 40px;
     width: 100%;
     position: fixed;
