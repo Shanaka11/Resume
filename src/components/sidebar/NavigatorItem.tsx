@@ -32,7 +32,7 @@ const NavigatorItem:React.FC<INavigatorItem> = ({ active, icon, text, handleOnCl
         handleOnClick && handleOnClick(id)
     }
 
-    return  <StyledLink>
+    return  <StyledLink title={text}>
                 <Link to={link}>
                     <StyledNavigatorItem active={active} left={coords.x} top={coords.y} onClick={handleButtonOnClick}>
                         {icon}
