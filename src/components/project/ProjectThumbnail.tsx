@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { IProjectObject } from "../../interfaces/IProject";
 import { Box, HeaderContainer, StyledProjectThumbnail, TextContainer } from "../styled/Project.styled";
 
@@ -18,7 +19,7 @@ const ProjectThumbnail:React.FC<IProjectObject> = ({ project }) => {
                         <p><strong>Tech Stack</strong></p>
                         <p>{project.techStack}</p>
                     </div>
-                    <a href={`/projects/${project.id}`}><em>Read More</em></a>
+                    <Link to={`/projects/${project.id}`}><em>Read More</em></Link>
                 </TextContainer>
                 {/* Screenshot of the landing page if possible */}
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
