@@ -21,7 +21,6 @@ const ProjectThumbnail:React.FC<IProjectObject> = ({ project }) => {
                     </div>
                     <Link to={`/projects/${project.id}`}><em>Read More</em></Link>
                 </TextContainer>
-                {/* Screenshot of the landing page if possible */}
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <Box src={project.image ? project.image : 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/GenericProject.jpeg'} alt="project-image"/>
                 </a>

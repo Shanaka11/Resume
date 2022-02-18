@@ -15,18 +15,6 @@ const History:React.FC<IHistoryArray> = ( { history } ) => {
                         </Fragment>
                     ))
                 }
-                {/* <LogoContainer href='www.google.com' target="_blank" rel="noopener noreferrer">
-                    <Logo src='https://www.ifs.com/content/images/logo.png' alt='IFS'/>
-                </LogoContainer>
-                <HistoryItem />
-                <LogoContainer>
-                    <Logo src='https://www.addovation.com/wp-content/themes/addovation/assets/images/logo-positiv.svg' alt='Addovation'/>
-                </LogoContainer>
-                <HistoryItem />
-                <LogoContainer>
-                    <Logo src='https://www.axcenze.com/images/logo2x.png' alt='Axcenze' />
-                </LogoContainer>
-                <HistoryItem /> */}
             </StyledHistory>;
 };
 
