@@ -2,7 +2,6 @@ import { StyledProjectList } from "../styled/Project.styled";
 import ProjectThumbnail from "./ProjectThumbnail";
 import { content } from '../../content';
 import { IProject } from "../../interfaces/IProject";
-;
 
 
 const ProjectList = () => {

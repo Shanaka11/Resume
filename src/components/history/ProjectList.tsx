@@ -3,7 +3,6 @@ import { IProjectHistory } from "../../interfaces/IHistory";
 
 const ProjectList:React.FC<IProjectHistory> = ({ description, details }) => {
 
-    console.log(description)
     if (details && details.length > 0){
         return  <li>
                     { description }

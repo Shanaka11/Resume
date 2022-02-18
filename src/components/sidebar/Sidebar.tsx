@@ -31,7 +31,7 @@ const navLinks:INavigatorItem[] = [
     {
         id: 1,
         icon: <AiFillStar size={25}/>,
-        text: 'Skills & Experiances',
+        text: 'Skills & Experience',
         link: '/skills'
     },
     {

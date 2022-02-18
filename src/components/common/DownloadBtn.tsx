@@ -1,4 +1,3 @@
-import React from 'react'
 import { StyledDownload } from '../styled/StyledDownload.styled'
 
 const DownloadBtn = () => {
