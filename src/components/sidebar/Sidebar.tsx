@@ -104,7 +104,7 @@ const Sidebar:React.FC<ISidebar> = ( { popover } ) => {
                             {popover && <IoMdClose size={25} color="white" onClick={(event) => handleCloseOnClick()}/>}   
                         </CloseButtonContainer>
                         <AvatarContainer>
-                            <Avatar src={content.avatar} alt="Avatar" />
+                            <Avatar src={content.avatar} alt="Avatar" loading="lazy" />
                         </AvatarContainer>
                         <TitleContainer>
                             <h1>{content.name}</h1>

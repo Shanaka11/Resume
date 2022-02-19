@@ -19,7 +19,11 @@ const ProjectDetailPage = () => {
                     <ProjectLinks links={projectData.otherLinks}/>
                     <p><strong>{projectData.techStack}</strong></p>
                     <p>{projectData.summary}</p>
-                    <StyledImg src={projectData.image ?? 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/GenericProject.jpeg'} alt={projectData.title}/>
+                    <StyledImg 
+                        src={projectData.image ?? 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/GenericProject.jpeg'} 
+                        alt={projectData.title}
+                        loading='lazy'
+                    />
                     {
                         projectData.details?.map((item:string, index:number) =>{
                             return <p key={index}>{item}</p>

@@ -22,7 +22,11 @@ const ProjectThumbnail:React.FC<IProjectObject> = ({ project }) => {
                     <Link to={`/projects/${project.id}`}><em>Read More</em></Link>
                 </TextContainer>
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
-                <Box src={project.image ? project.image : 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/GenericProject.jpeg'} alt="project-image"/>
+                <Box 
+                    src={project.image ? project.image : 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/GenericProject.jpeg'} 
+                    alt="project-image"
+                    loading='lazy'
+                />
                 </a>
             </StyledProjectThumbnail>;
 };
