@@ -14,6 +14,7 @@ import SummeryPage from './pages/SummeryPage';
 import WorkHistoryPage from './pages/WorkHistoryPage';
 import { theme } from './Theme';
 
+// TODO: Implement Lazy Loading
 
 function App() {
 

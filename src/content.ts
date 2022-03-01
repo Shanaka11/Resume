@@ -201,24 +201,24 @@ export const content:IContent = {
                 'Client Handling'
             ]
         },
-        {
-            time: '2021-12 to Present',
-            title: 'Senior Technical Consultant - Full Time Permanent - Axzenze Pvt Ltd (SL)',
-            description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
-            avatar: 'https://www.axcenze.com/images/logo2x.png',
-            avatarAlt: 'Axcenze',
-            link: 'https://www.axcenze.com/',
-            responsibilities: [
-                'Design & Implement Client Customizations for IFS Applications',
-                'IFS Report designing'
-            ],
-            experiance:[
-                'C#',
-                'SQL/PLSQL',
-                'IFS Aurena',
-                'Working on IFS Integration solutions for 3rd Party Applications'
-            ]
-        },
+        // {
+        //     time: '2021-12 to Present',
+        //     title: 'Senior Technical Consultant - Full Time Permanent - Axzenze Pvt Ltd (SL)',
+        //     description: 'C# | PLSQL | IFSApplications 8-10 | IFSAurena | IFSMiddleTierDevelopment',
+        //     avatar: 'https://www.axcenze.com/images/logo2x.png',
+        //     avatarAlt: 'Axcenze',
+        //     link: 'https://www.axcenze.com/',
+        //     responsibilities: [
+        //         'Design & Implement Client Customizations for IFS Applications',
+        //         'IFS Report designing'
+        //     ],
+        //     experiance:[
+        //         'C#',
+        //         'SQL/PLSQL',
+        //         'IFS Aurena',
+        //         'Working on IFS Integration solutions for 3rd Party Applications'
+        //     ]
+        // },
         {
             time: '2020-01 to 2021-11',
             title: 'Senior Software Engineer - Full Time Permanent - Addovation Pvt Ltd (Sweeden, Site KAN01 )',

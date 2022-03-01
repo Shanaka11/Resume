@@ -9,7 +9,7 @@ const History:React.FC<IHistoryArray> = ( { history } ) => {
                     history.map(( item: IHistory, index:number) => (
                         <Fragment key={index}>
                         <LogoContainer href={item.link} target="_blank" rel="noopener noreferrer">
-                            <Logo src={item.avatar} alt={item.avatarAlt} />
+                            <Logo src={item.avatar} alt={item.avatarAlt} loading='lazy'/>
                         </LogoContainer>
                         <HistoryItem historyItem={item}/>
                         </Fragment>
