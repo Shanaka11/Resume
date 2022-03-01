@@ -8,8 +8,8 @@ import WorkHistory from "../components/work/WorkHistory";
 const SummeryPage = () => {
   return    <Page>          
                 <Title title="About Me"/>
-                <p>Ann accomplished Software Engineer with more than <strong>five</strong> years of industry experience. During that period, I have gained extensive knowledge and experience in Software Development, Testing, Deploying, and Delivery. Furthermore, I'm well versed in Requirement gathering, Client handling, Problem-solving, and Solution Designing.</p>
-                <p> consider myself a professional who believes Quality of Delivery and Customer Satisfaction are the keys to the success of a business. Therefore always strive to achieve that goal.</p>
+                <p>An accomplished Software Engineer with more than <strong>five</strong> years of industry experience. During that period, I have gained extensive knowledge and experience in Software Development, Testing, Deploying, and Delivery. Furthermore, I'm well versed in Requirement gathering, Client handling, Problem-solving, and Solution Designing.</p>
+                <p>I consider myself a professional who believes Quality of Delivery and Customer Satisfaction are the keys to the success of a business. Therefore always strive to achieve that goal.</p>
                 <p>I find joy in learning new technology, problem solving and a bit of soccer as well.</p>
                 <Title title="Skills & Experience" margin/>
                 <SkillsList list="summary"/>
