@@ -87,7 +87,7 @@ export const content:IContent = {
     avatar: 'https://five12daysgeneral.s3.ap-southeast-1.amazonaws.com/resume/911080710A_2x2.jpeg',
     contact: {
         phone: '+94 71 414 5 998',
-        email: 'shanakaabeysinghe@gmail.com',
+        email: 'shanaka.abeysinghe.se@gmail.com',
         location: 'Kandy, Sri Lanka',
         github: 'https://github.com/shanaka11',
         linkedIn: 'https://linkedin.com/in/shanakaabeysinghe'
